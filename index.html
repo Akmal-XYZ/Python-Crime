@@ -1,7 +1,321 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-				<style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Crime</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link ke file CSS terpisah -->
+</head>
+<body>
+    <div class="navbar" id="navbar">
+        <ul>
+            <a href="https://chat.whatsapp.com/LuJU8AR22n53NTGHmRwHMY">ROOM CHAT</a>
+            <a href="https://i.top4top.io/p_3366kgl2a0.jpeg">GET TOOLS</a>
+            <a href="https://chat.whatsapp.com/LuJU8AR22n53NTGHmRwHMY">Community</a>
+            <a href="https://overthewire.org/wargames/">Hacking Game</a>
+            <a href="https://chat.whatsapp.com/LuJU8AR22n53NTGHmRwHMY">MISSIONS</a>
+        </ul>
+    </div>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+
+    <header>
+    		
+        <h2>Welcome To Python Crime</h2>
+        <p>Community Hacker + Programmer Asia</p>
+    </header>
+<center>
+    <main>
+    <section id="top-players">
+    <h2>List Members</h2>
+    <div class="player" onclick="showProfile('👑AkmalShellby', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKkrKc9MuQag6nG9vn5KZGtMuRZXzzDcdP2AWT6-RiSVAsCkVb_XoGlTM&s=10', '⭐⭐⭐⭐⭐⭐', ['Web Attacker', 'Web Scrapper', 'Phisher', 'Doxxer'])">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKkrKc9MuQag6nG9vn5KZGtMuRZXzzDcdP2AWT6-RiSVAsCkVb_XoGlTM&s=10" alt="Player 1">
+        <h3>🇮🇩</h3>
+        <p>AkmalShellby</p>
+    </div>
+    <div class="player" onclick="showProfile('👑Venz Attacker', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYwG47-uGBr4BkGm64Oa-JSwo_sOpjPaAGvXemBkV-9nTQxxb3493pmYE&s=10', '⭐⭐⭐⭐⭐⭐', ['Web Attacker', 'Web Scrapper', 'Phisher', 'Doxxer'])">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYwG47-uGBr4BkGm64Oa-JSwo_sOpjPaAGvXemBkV-9nTQxxb3493pmYE&s=10" alt="Player 2">
+        <h3>🇲🇾</h3>
+        <p>Venz Attacker</p>
+    </div>
+    
+    <!-- Pemain baru yang ditambahkan -->
+    <div class="player" onclick="showProfile('🇸🇦تقسيم - الخادم -', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMuQ3SCrJk6ARjCdSKsSP67yXPktEaNr6rDrAGHhAAM5tHsLWuYTN9iOg&s=10', '⭐⭐⭐⭐⭐', ['Doxing', 'mancing', 'ngising'])">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMuQ3SCrJk6ARjCdSKsSP67yXPktEaNr6rDrAGHhAAM5tHsLWuYTN9iOg&s=10" alt="Player 3">
+        <h3>🇸🇦</h3>
+        <p>-تقسيم - الخادم -</p>
+    </div>
+    
+    <div class="player" onclick="showProfile('🇮🇩FRANK Cyber', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3-EXcXBK8lxEfbtDadrprB8ba9urV1RT7Y6u5N-mUAy1yt_0rz_2_nbqB&s=10', '⭐⭐⭐⭐⭐', ['Doxing', 'mancing', 'ngising'])">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3-EXcXBK8lxEfbtDadrprB8ba9urV1RT7Y6u5N-mUAy1yt_0rz_2_nbqB&s=10" alt="Player 2">
+        <h3>🇮🇩</h3>
+        <p>FRANK Cyber</p>
+    </div>
+    
+    <div class="player" onclick="showProfile('🇮🇩elchapodapiero', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3-EXcXBK8lxEfbtDadrprB8ba9urV1RT7Y6u5N-mUAy1yt_0rz_2_nbqB&s=10', '⭐⭐⭐⭐⭐', ['Doxing', 'mancing', 'ngising'])">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3-EXcXBK8lxEfbtDadrprB8ba9urV1RT7Y6u5N-mUAy1yt_0rz_2_nbqB&s=10" alt="Player 2">
+        <h3>🇮🇩</h3>
+        <p>elchapodapiero</p>
+    </div>
+    
+    <div class="player" onclick="showProfile('🇮🇩DAVE Doxing', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-6GSBmOTuJvgNZejvLty0aX_6jo2cKHBNU0QKQrLqG8dCSI6tCGJN8byO&s=10', '⭐⭐⭐⭐⭐', ['Doxing', 'mancing', 'ngising'])">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-6GSBmOTuJvgNZejvLty0aX_6jo2cKHBNU0QKQrLqG8dCSI6tCGJN8byO&s=10" alt="Player 3">
+        <h3>🇮🇩</h3>
+        <p>DAVE Doxing</p>
+    </div>
+    
+    <div class="player" onclick="showProfile('🇮🇩Parrr - iiiiiiiiiii', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoN7EF3FlyuXhfvVPyb82xizBcCs22hgv1TMthi_731pCKUQMRowLInlQW&s=10', '⭐⭐⭐⭐⭐', ['Doxing', 'mancing', 'ngising'])">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoN7EF3FlyuXhfvVPyb82xizBcCs22hgv1TMthi_731pCKUQMRowLInlQW&s=10" alt="Player 3">
+        <h3>🇮🇩</h3>
+        <p>Parrr - iiiiiiiiiii</p>
+    </div>
+    
+    <div class="player" onclick="showProfile('🇮🇩Patir-Meletop', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsFcZxYj6Yv-D-IgpFHbGwjUX4tC41p70YpR5_WXMvr1sUXyZf10VQ-vnV&s=10', '⭐⭐⭐⭐⭐', ['Doxing', 'mancing', 'ngising'])">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsFcZxYj6Yv-D-IgpFHbGwjUX4tC41p70YpR5_WXMvr1sUXyZf10VQ-vnV&s=10" alt="Player 2">
+        <h3>🇮🇩</h3>
+        <p>Patir-Meletop</p>
+    </div>
+    
+    <div class="player" onclick="showProfile('🇮🇩Repan - EXDI', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPAlZhQm6zu8Qw7IVvQSVBDxsFSYDeS1KNPGITTz45_7iRYFFBdXxjycl4&s=10', '⭐⭐⭐⭐⭐', ['Doxing', 'mancing', 'ngising'])">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPAlZhQm6zu8Qw7IVvQSVBDxsFSYDeS1KNPGITTz45_7iRYFFBdXxjycl4&s=10" alt="Player 2">
+        <h3>🇮🇩</h3>
+        <p>Repan - EXDI</p>
+    </div>
+    
+    <div class="player" onclick="showProfile('🇮🇩Isaac Newton', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlWsUo7x6n7QttO3c9on3R7YL8Kq1cgd2P23BBSr8on106ax7SpDetm-Cf&s=10', '⭐⭐⭐⭐⭐', ['Doxing', 'mancing', 'ngising'])">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlWsUo7x6n7QttO3c9on3R7YL8Kq1cgd2P23BBSr8on106ax7SpDetm-Cf&s=10" alt="Player 3">
+        <h3>🇮🇩</h3>
+        <p>Isaac Newton</p>
+    </div>
+    
+    <div class="player" onclick="showProfile('🇮🇩LUIIS - VIGO', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLj_ReNYZiIcplrWVp0n9p_-wqIpFhgWBiSyNQkH-BCGQTw8MJlRwbQ3Q&s=10', '⭐⭐⭐⭐⭐', ['Doxing', 'mancing', 'ngising'])">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLj_ReNYZiIcplrWVp0n9p_-wqIpFhgWBiSyNQkH-BCGQTw8MJlRwbQ3Q&s=10" alt="Player 3">
+        <h3>🇮🇩</h3>
+        <p>LUIIS - VIGO</p>
+    </div>
+    
+    <div class="player" onclick="showProfile('🇮🇩MR. J..........', 'https://thumbs2.imgbox.com/17/c9/C1x3Fj9a_t.jpg', '⭐⭐⭐⭐⭐', ['Doxing', 'mancing', 'ngising'])">
+        <img src="https://thumbs2.imgbox.com/17/c9/C1x3Fj9a_t.jpg" alt="Player 2">
+        <h3>🇮🇩</h3>
+        <p>MR. J..........</p>
+    </div>
+    
+    <div class="player" onclick="showProfile('🇮🇩- L. E. X. A. -', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi0ql7D4t3FgRpcUSTEzir_UjcPc702e8irw&s', '⭐⭐⭐⭐⭐', ['Doxing', 'mancing', 'ngising'])">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi0ql7D4t3FgRpcUSTEzir_UjcPc702e8irw&s" alt="Player 2">
+        <h3>🇮🇩</h3>
+        <p>- L. E. X. A. - </p>
+    </div>
+    
+    <div class="player" onclick="showProfile('🇮🇩Ranggatukam', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiYyhPnt3gk6O9DesDE42RVfkE8IWeEHWPw2t3kmL-wEnx0_n831_1jA4&s=10', '⭐⭐⭐⭐⭐', ['Doxing', 'mancing', 'ngising'])">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiYyhPnt3gk6O9DesDE42RVfkE8IWeEHWPw2t3kmL-wEnx0_n831_1jA4&s=10" alt="Player 3">
+        <h3>🇮🇩</h3>
+        <p>Ranggatukam</p>
+    </div>
+</section>
+</center>
+    </main>
+
+    <div id="profile-modal">
+        <div class="modal-content">
+            <span id="close-modal" style="cursor: pointer;">&times;</span>
+            <div class="modal-header" id="modal-name"></div>
+            <img id="modal-image" src="" alt="Profile Picture" style="width: 120px; height: 120px; border-radius: 10%; margin-top: 10px; position: relative; top: -20px;">
+            <div class="rank" id="modal-rank">Gold</div>
+            <div class="yamyam">GOOD</div>
+            <div class="skills" id="modal-skills"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Python Crime. Semua hak dilindungi.</p>
+    </footer>
+
+    <script>
+        const navbar = document.getElementById('navbar');
+        const menuToggle = document.getElementById('menu-toggle');
+        const modal = document.getElementById('profile-modal');
+        const closeModal = document.getElementById('close-modal');
+
+        menuToggle.addEventListener('click', () => {
+            navbar.classList.toggle('show');
+            toggleText();
+        });
+
+        function toggleText() {
+            const buttonText = menuToggle.textContent;
+            menuToggle.textContent = buttonText === "☰" ? "X" : "☰";
+        }
+
+        function showProfile(name, image, rank, skills) {
+            document.getElementById('modal-name').textContent = name;
+            document.getElementById('modal-image').src = image;
+            document.getElementById('modal-rank').textContent = rank;
+            const skillsContainer = document.getElementById('modal-skills');
+            skillsContainer.innerHTML = ''; // Clear previous skills
+            skills.forEach(skill => {
+                const skillDiv = document.createElement('div');
+                skillDiv.className = 'skill';
+                skillDiv.textContent = skill;
+                skillsContainer.appendChild(skillDiv);
+            });
+            modal.style.display = 'flex';
+        }
+
+        closeModal.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
+
+<style>
+				/* Tambahkan ini ke bagian CSS yang ada */
+#close-modal {
+    color: #0d0d0d; /* Menetapkan warna untuk tanda "X" */
+    font-size: 1.5em; /* Menetapkan ukuran font untuk tanda "X" */
+    margin-bottom: 10px; /* Menambah jarak di bawah tanda "X" */
+}
+
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #0d0d0d;
+        color: #00ffcc;
+        margin: 0;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    h1, h2 {
+        margin-bottom: 10px;
+        transition: transform 0.5s;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    .player {
+        background-color: #1a1a1a;
+        border-radius: 10px;
+        padding: 10px;
+        
+        margin: 10px;
+        display: inline-block;
+        text-align: center;
+        cursor: pointer;
+        transition: transform 0.3s;
+    }
+
+    .player:hover {
+        transform: scale(1.05);
+    }
+
+    .player img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+
+    /* Modal styles */
+    #profile-modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        justify-content: center;
+        align-items: center;
+    }
+
+    .modal-content {
+        background-color: #1a1a1a;
+        padding-top: 50px;
+        border-radius: 10px;
+        text-align: center;
+        width: 300px;
+    }
+
+    #modal-image {
+        width: 1000px; 
+        height: 100px; 
+        border-radius: 50%; 
+        margin-top: -20px; 
+        transition: margin-top 0.3s; 
+    }
+
+    .modal-header {
+        color: red;
+        font-size: 1.5em;
+        position: relative;
+        top: -40px;
+        font-weight: 850;
+    }
+
+    .rank {
+        background-color: #030303;
+        color: #F1F16A;
+        padding: 10px;
+        position: relative;
+        top: -20px;
+        font-size: 1.5em;
+        margin-top: 50px;
+    }
+
+    .yamyam {
+        background-color: #030303; 
+        color: #F1F16A; 
+        padding: 25px 70px; 
+        margin: 10px auto; 
+        border-radius: 30px; 
+        width: fit-content; 
+        position: relative;
+        font-weight: 1000;
+        top: -18px;
+        font-size: 1.5em; 
+        border: 1px solid #F1F16A;
+    }
+
+    .skills {
+        margin: 10px auto; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        top: -10px;
+    }
+
+    .skill {
+        background-color: #3dc185;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+        margin: 5px 0;
+        width: fit-content;
+    }
+
+    footer {
+        margin-top: 20px;
+    }
+
+    /* Navbar */
     body {
         margin: 0;
         padding: 0;
@@ -23,8 +337,8 @@
         border: 1px solid #00ffcc;
         border-radius: 1%;
         transition: 0.5s;
-        }
-        
+    }
+
     .navbar.show {
         right: 0;
     }
@@ -48,250 +362,3 @@
         border-radius: 4px;
     }
 </style>
-</head>
-<body>
-    <div class="navbar" id="navbar">
-        <br>
-        <center>
-            
-        </center>
-        <ul>
-            <a href="https://chat.whatsapp.com/LuJU8AR22n53NTGHmRwHMY">ROOM CHAT</a>
-            <a href="https://i.top4top.io/p_3366kgl2a0.jpeg">GET TOOLS</a>
-            <a href="https://chat.whatsapp.com/LuJU8AR22n53NTGHmRwHMY">Comunity</a>
-            <a href="https://overthewire.org/wargames/">Hacking Game</a>
-            <a href="https://chat.whatsapp.com/LuJU8AR22n53NTGHmRwHMY">MISSIONS</a>
-        </ul>
-    </div>
-    <div class="menu-toggle" id="menu-toggle">☰</div>
-    
-    <script>
-        const navbar = document.getElementById('navbar');
-        const menuToggle = document.getElementById('menu-toggle');
-        
-        menuToggle.addEventListener('click', () => {
-            navbar.classList.toggle('show');
-        });
-    </script>
-
-    <script>
-        function toggleText() {
-            var buttonText = document.getElementById("menu-toggle").textContent;
-            document.getElementById("menu-toggle").textContent = buttonText === "☰" ? "X" : "☰";
-        }
-
-        document.getElementById("menu-toggle").addEventListener("click", toggleText);
-    </script>
-</body>
-</html>
-
-
-
-				
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Python Crime</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #0d0d0d;
-            color: #00ffcc;
-            margin: 0;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        header {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        h1, h2 {
-            margin-bottom: 10px;
-            transition: transform 0.5s;
-        }
-
-        h1 {
-            font-size: 2.5em;
-        }
-
-        h2 {
-            font-size: 2em;
-        }
-
-        .player {
-            background-color: #1a1a1a;
-            border-radius: 10px;
-            padding: 10px;
-            margin: 10px;
-            display: inline-block;
-            text-align: center;
-            cursor: pointer;
-            transition: transform 0.3s;
-        }
-
-        .player:hover {
-            transform: scale(1.05);
-        }
-
-        .player img {
-            width: 40px; /* Atur lebar logo */
-            height: 40px; /* Atur tinggi logo */
-            border-radius: 50%; /* Membuat logo menjadi bulat */
-        }
-
-        #profile-display {
-            margin-top: 20px;
-            background-color: #1a1a1a;
-            border-radius: 10px;
-            padding: 20px;
-            box-shadow: 0 0 15px rgba(0, 255, 204, 0.5);
-            width: 300px;
-            text-align: left; /* Ubah teks menjadi rata kiri */
-        }
-
-        .profile {
-            display: flex;
-            align-items: center;
-            margin-bottom: 10px;
-        }
-
-        .profile img {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            margin-right: 10px;
-        }
-
-        #profile-info {
-            display: none;
-        }
-
-        footer {
-            margin-top: 20px;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Welcome To Python Crime</h1>
-        
-        <p>Comuntiy Hacker + Programmer Asia</p>
-    </header>
-
-    <main>
-        <section id="top-players">
-            <h2>List Members</h2>
-            <div class="player" onclick="('Player 1', 'Deskripsi Player 1', 'profile1.jpg')">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKkrKc9MuQag6nG9vn5KZGtMuRZXzzDcdP2AWT6-RiSVAsCkVb_XoGlTM&s=10" alt="Player 1">
-                  <h3>🇮🇩</h3>
-                <p>AkmalShellby</p>
-            </div>
-            <div class="player" onclick="('Player 2', 'Deskripsi Player 2', 'profile2.jpg')">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYwG47-uGBr4BkGm64Oa-JSwo_sOpjPaAGvXemBkV-9nTQxxb3493pmYE&s=10" alt="Player 2">
-                <h3>🇲🇾</h3>
-                <p>Venz Attacker</p>
-                
-            </div>
-            
-         
-                
-          
-            <div class="player" onclick="('Player 3', 'Deskripsi Player 3', 'profile3.jpg')">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMuQ3SCrJk6ARjCdSKsSP67yXPktEaNr6rDrAGHhAAM5tHsLWuYTN9iOg&s=10" alt="Player 3">
-                 <h3>🇸🇦</h3>
-                <p>-تقسيم  -  الخادم -</p>
-            </div>
-            
-              <div class="player" onclick="('Player 2', 'Deskripsi Player 2', 'profile2.jpg')">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3-EXcXBK8lxEfbtDadrprB8ba9urV1RT7Y6u5N-mUAy1yt_0rz_2_nbqB&s=10" alt="Player 2">
-                <h3>🇮🇩</h3>
-                <p>FRANK Cyber</p>
-                
-                  </div>
-            
-                <div class="player" onclick="('Player 2', 'Deskripsi Player 2', 'profile2.jpg')">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3-EXcXBK8lxEfbtDadrprB8ba9urV1RT7Y6u5N-mUAy1yt_0rz_2_nbqB&s=10" alt="Player 2">
-                <h3>🇮🇩</h3>
-                <p>elchapodapiero</p>
-                
-            </div>
-            <div class="player" onclick="('Player 3', 'Deskripsi Player 3', 'profile3.jpg')">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-6GSBmOTuJvgNZejvLty0aX_6jo2cKHBNU0QKQrLqG8dCSI6tCGJN8byO&s=10" alt="Player 3">
-                 <h3>🇮🇩</h3>
-                <p>DAVE Doxing</p>
-            </div>
-            
-            
-            
-                <div class="player" onclick="('Player 3', 'Deskripsi Player 3', 'profile3.jpg')">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoN7EF3FlyuXhfvVPyb82xizBcCs22hgv1TMthi_731pCKUQMRowLInlQW&s=10" alt="Player 3">
-                 <h3>🇮🇩</h3>
-                <p>Parrr - iiiiiiiiiii</p>
-            </div>
-            
-              <div class="player" onclick="('Player 2', 'Deskripsi Player 2', 'profile2.jpg')">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsFcZxYj6Yv-D-IgpFHbGwjUX4tC41p70YpR5_WXMvr1sUXyZf10VQ-vnV&s=10" alt="Player 2">
-                <h3>🇮🇩</h3>
-                <p>Patir-Meletop</p>
-                
-                  </div>
-            
-                <div class="player" onclick="('Player 2', 'Deskripsi Player 2', 'profile2.jpg')">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPAlZhQm6zu8Qw7IVvQSVBDxsFSYDeS1KNPGITTz45_7iRYFFBdXxjycl4&s=10" alt="Player 2">
-                <h3>🇮🇩</h3>
-                <p>Repan - EXDI</p>
-                
-            </div>
-            <div class="player" onclick="('Player 3', 'Deskripsi Player 3', 'profile3.jpg')">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlWsUo7x6n7QttO3c9on3R7YL8Kq1cgd2P23BBSr8on106ax7SpDetm-Cf&s=10" alt="Player 3">
-                 <h3>🇮🇩</h3>
-                <p>Isaac Newton</p>
-            </div>
-            
-            
-            
-            
-            <div class="player" onclick="('Player 3', 'Deskripsi Player 3', 'profile3.jpg')">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLj_ReNYZiIcplrWVp0n9p_-wqIpFhgWBiSyNQkH-BCGQTw8MJlRwbQ3Q&s=10" alt="Player 3">
-                 <h3>🇮🇩</h3>
-                <p>LUIIS - VIGO</p>
-            </div>
-            
-              <div class="player" onclick="('Player 2', 'Deskripsi Player 2', 'profile2.jpg')">
-                <img src="https://thumbs2.imgbox.com/17/c9/C1x3Fj9a_t.jpg" alt="Player 2">
-                <h3>🇮🇩</h3>
-                <p>MR. J..........</p></p>
-                
-                  </div>
-            
-                <div class="player" onclick="('Player 2', 'Deskripsi Player 2', 'profile2.jpg')">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi0ql7D4t3FgRpcUSTEzir_UjcPc702e8irw&s" alt="Player 2">
-                <h3>🇮🇩</h3>
-                <p>- L. E. X. A. - </p>
-                
-            </div>
-            <div class="player" onclick="('Player 3', 'Deskripsi Player 3', 'profile3.jpg')">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiYyhPnt3gk6O9DesDE42RVfkE8IWeEHWPw2t3kmL-wEnx0_n831_1jA4&s=10" alt="Player 3">
-                 <h3>🇮🇩</h3>
-                <p>Ranggatukam</p>
-            </div>
-            
-            
-            
-            
-        </section>
-
-     
-    </main>
-
-    <footer>
-        <p>&copy; 2023 Python Crime. Semua hak dilindungi.</p>
-    </footer>
-
-
-</body>
-</html>
